@@ -88,7 +88,7 @@ header{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url(img/sun.png);
+    background-image: url(img/sun.jpg);
     background-size: cover;
     background-position: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -101,7 +101,7 @@ header{
 
 .toggle-switch input[type="checkbox"]:checked+label:before {
     transform: translateX(26px);
-    background-image: url(img/moon.png);
+    background-image: url(img/moon.jpg);
     background-size: cover;
     background-position: center;
 }
