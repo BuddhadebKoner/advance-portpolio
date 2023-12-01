@@ -122,13 +122,14 @@ main{
 
 /* cover section */
 #dark-img{
-   
+    width: 40%;
     height: 100%;
     float: right;
     opacity: 1;
     display: none;
 }
 #light-img{
+    width: 40%;
     height: 100%;
     float: right;
     opacity: 1;
