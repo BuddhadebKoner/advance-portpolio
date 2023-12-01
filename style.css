@@ -117,5 +117,20 @@ main{
 .banner{
     width: 100%;
     height: 40vh;
-    background-color: aqua;
+    background-color: white;
+}
+
+/* cover section */
+#dark-img{
+   
+    height: 100%;
+    float: right;
+    opacity: 1;
+    display: none;
+}
+#light-img{
+    height: 100%;
+    float: right;
+    opacity: 1;
+    display: none;
 }
