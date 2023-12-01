@@ -14,12 +14,22 @@ body {
     overflow-y: auto;
     background-color: antiquewhite;
 }
+.dark-mode{
+    background-color: black !important;
+    color: white;
+}
+.light-mode{
+    background-color: white !important;
+}
+.elements-checked a {
+    color: white !important;
+  }
 header{
     position: fixed;
     width: 100%;
     height: 100px;
     padding: 3vw;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     z-index: 1;
 }
 .elements{
@@ -44,6 +54,8 @@ header{
 .navs-link a{
     margin: 10px;
 }
+
+
 /* button for the dark and light mode */
 .toggle-switch {
     position: relative;
@@ -76,7 +88,7 @@ header{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url(sun.png);
+    background-image: url(img/sun.png);
     background-size: cover;
     background-position: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
@@ -89,7 +101,7 @@ header{
 
 .toggle-switch input[type="checkbox"]:checked+label:before {
     transform: translateX(26px);
-    background-image: url(moon.png);
+    background-image: url(img/moon.png);
     background-size: cover;
     background-position: center;
 }
