@@ -1,30 +1,39 @@
 console.log("successful!");
 
 var switchCheckbox = document.getElementById('switch');
+// for body bg ----------------
+var BodyElement = document.querySelector('body');
+// for heading backgrounf -------
 var headerElement = document.querySelector('header');
+// for the links and text in the header --
 var elements = document.querySelector('.elements');
-// access cover images light and dark
+// access cover images light and dark--
 var darkImg = document.getElementById('dark-img');
 var lightImg = document.getElementById('light-img');
-// for banner bg
+// for banner bg--
 var bannerBg = document.querySelector('.banner');
 
 function darkLightMode() {
-    const isSwitchChecked = switchCheckbox.checked;
-    const isDarkMode = isSwitchChecked;
+    const isSwitchChecked = !switchCheckbox.checked; // Change to !switchCheckbox.checked for dark mode by default
+    const isDarkMode = isSwitchChecked; // when checked dark mode enable .
 
-    headerElement.classList.toggle('light-mode', !isDarkMode);
-    headerElement.classList.toggle('dark-mode', isDarkMode);
-    elements.classList.toggle('elements-checked', isSwitchChecked);
+    BodyElement.classList.toggle('light-mode', !isDarkMode); // body light mode bg
+    BodyElement.classList.toggle('dark-mode', isDarkMode); // body dark mode bg
 
-    darkImg.style.display = isDarkMode ? 'block' : 'none';
-    lightImg.style.display = isDarkMode ? 'none' : 'block';
+    headerElement.classList.toggle('light-mode', !isDarkMode); // header bg
+    headerElement.classList.toggle('dark-mode', isDarkMode); // header bg
+
+    elements.classList.toggle('elements-checked', isSwitchChecked); // for the text color that is var(--light-bg) , 'elements-checked' this is a class that has a var(--light-bg) bg .
+
+    darkImg.style.display = isDarkMode ? 'block' : 'none'; // a coding bg image for the dark mode
+    lightImg.style.display = isDarkMode ? 'none' : 'block';  // complement img for light
 
     // Toggle banner background color
-    bannerBg.style.backgroundColor = isDarkMode ? 'black' : 'white';
+    bannerBg.style.backgroundColor = isDarkMode ? 'var(--dark-bg)' : 'var(--light-bg)';
 }
 
-darkLightMode();
+darkLightMode(); // first call the function for the default state -- that is dark
+
 switchCheckbox.addEventListener('change', function () {
-    darkLightMode();
+    darkLightMode(); // when you checked, it again calls the function, and then enables the dark mode options
 });

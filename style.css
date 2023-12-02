@@ -7,32 +7,49 @@
     font-family: 'Roboto', sans-serif;
 }
 
+/* all color palate variables--*/
+:root {
+    --dark-bg: #01161e;
+    --light-bg: #ffffff;
+}
+
 body {
     width: 100%;
     height: 200vh;
     overflow-x: hidden;
+    /*off the horizantal scrolling*/
     overflow-y: auto;
-    background-color: antiquewhite;
+    background-color: transparent;
 }
-.dark-mode{
-    background-color: black !important;
-    color: white;
+
+.dark-mode {
+    background-color: var(--dark-bg) !important;
+    /*for dark mode*/
+    color: var(--light-bg);
 }
-.light-mode{
-    background-color: white !important;
+
+.light-mode {
+    background-color: var(--light-bg) !important;
+    /*light*/
 }
+
 .elements-checked a {
-    color: white !important;
-  }
-header{
+    color: var(--light-bg) !important;
+}
+
+header {
     position: fixed;
     width: 100%;
     height: 100px;
     padding: 3vw;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
+    /*it is not permanent , because it will change im the js file*/
     z-index: 1;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.427);
+    /* padding-bottom: 5px; */
 }
-.elements{
+
+.elements {
     width: 100%;
     height: 100%;
     font-size: 25px;
@@ -40,21 +57,28 @@ header{
     align-items: center;
     justify-content: space-between;
 }
-.elements a{
+
+.elements a {
     text-decoration: none;
-    color: black;
+    color: var(--dark-bg);
 }
-.navs-link{
+
+.navs-link {
     display: flex;
     align-items: center;
 }
-.navs-link button{
-    margin: 10px;
-}
-.navs-link a{
+
+.navs-link button {
     margin: 10px;
 }
 
+.navs-link a {
+    margin: 10px;
+}
+
+#nav-contac {
+    margin-right: 50px;
+}
 
 /* button for the dark and light mode */
 .toggle-switch {
@@ -75,7 +99,7 @@ header{
     width: 100%;
     height: 100%;
     border-radius: 17px;
-    background-color: black;
+    background-color: var(--light-bg);
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -88,50 +112,78 @@ header{
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url(img/sun.jpg);
+    background-image: url(img/moon.jpg);
     background-size: cover;
     background-position: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, );
     transition: transform 0.3s;
 }
 
 .toggle-switch input[type="checkbox"]:checked+label {
-    background-color: white;
+    background-color: var(--dark-bg);
 }
 
 .toggle-switch input[type="checkbox"]:checked+label:before {
     transform: translateX(26px);
-    background-image: url(img/moon.jpg);
+    background-image: url(img/sun.jpg);
     background-size: cover;
     background-position: center;
 }
+
+/*upper part is for the dark and light mode */
+
+
 /* for the main body start from here  */
-main{
+main {
     position: absolute;
     top: 100px;
     background-color: rgb(64, 95, 95);
     width: 100%;
     height: 100%;
 }
+
 /* the baner portion is from here  */
-.banner{
+.banner {
     width: 100%;
     height: 40vh;
-    background-color: white;
+    background-color: var(--light-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 /* cover section */
-#dark-img{
-    width: 40%;
+.cover-image-box {
+    width: 600px;
     height: 100%;
-    float: right;
-    opacity: 1;
-    display: none;
+    background-color: transparent;
 }
-#light-img{
-    width: 40%;
+
+
+#dark-img,
+#light-img {
+    width: 800px;
     height: 100%;
-    float: right;
-    opacity: 1;
+    opacity: 0.5;
     display: none;
+    /* z-index: -1; */
+}
+
+#dark-img {
+    mix-blend-mode: screen;
+}
+
+#light-img {
+    mix-blend-mode: multiply;
+}
+
+/*here the content that have in the banner section..*/
+.cover-content {
+    background-color: transparent;
+    /* width: 100%;
+    height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
