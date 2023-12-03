@@ -31,7 +31,7 @@ function imageToggle(isDarkMode) {
 function headerContent(isDarkMode) {
     // access the elements--- 
     const headerBgElement = document.querySelector('.heading-content');
-    const logo = document.getElementById('logo');
+    const logo = document.querySelector('.logo');
     const navlinks = Array.from(document.getElementsByClassName('nav-links-tag'));
 
     navlinks.forEach(link => link.style.color = isDarkMode ? 'white' : 'black');
@@ -43,6 +43,7 @@ function mainContent(isDarkMode) {
     const banner = document.querySelector('.banner');
     const recomendation = document.querySelector('.recomendation');
     const headingRec = document.querySelector('.heading-rec');
+    const textAnime = document.getElementById('text-anime');
 
 
     banner.style.color = isDarkMode ? 'var(--header-btn-light)' : 'var(--header-btn-dark)';
@@ -52,6 +53,8 @@ function mainContent(isDarkMode) {
     headingRec.style.color = isDarkMode ? 'var(--header-btn-light)' : 'var(--bright-text)';
     recomendation.style.backgroundColor = isDarkMode? 'var(--banner-bg)':'var(--White)';
 
+    // text-animation cursor border --
+    textAnime.style.borderRight = isDarkMode? '2px solid #ffffff':'2px solid #000000'; 
     console.log("hi");
 }
 
@@ -69,9 +72,9 @@ switchCheckbox.addEventListener('change', function () {
 // An array containing the texts to be displayed in the animation
 
 const texts = [
-    'Hello!',
-    'This is a cool animation.',
-    'Let\'s learn how to create it.'
+    'Wellcome to my Website. . .',
+    'Explore Coding Univerce. . .',
+    'Lets contrubute and colabrate. . .'
   ];
   
   // Index to keep track of the current text in the array

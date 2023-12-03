@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mentenence</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto&display=swap');
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            background-color: #101827;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            cursor: pointer;
+            font-size: 3em;
+            transition: color 0.3s, transform 0.3s;
+            text-decoration: none;
+            position: relative;
+        }
+
+        /* Underline on hover */
+        a:hover {
+            color: #007bff;
+        }
+
+        /* Lift effect on hover */
+        a:hover::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #007bff;
+            bottom: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.3s;
+        }
+
+        a:hover::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #007bff;
+            top: -5px;
+            left: 0;
+            transform: scaleX(0);
+            transform-origin: top left;
+            transition: transform 0.3s;
+        }
+
+        /* Expand underline on hover */
+        a:hover::after,
+        a:hover::before {
+            transform: scaleX(1);
+        }
+
+        /* Lift effect on hover */
+        a:hover {
+            transform: translate(0, -5px);
+        }
+    </style>
+</head>
+
+<body>
+    <a>This Page Is under mentenence</a>
+</body>
+
+</html>
