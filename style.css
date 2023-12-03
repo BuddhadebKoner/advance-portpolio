@@ -139,6 +139,7 @@ body {
 .navs-link {
     display: flex;
     align-items: center;
+    font-size: 20px;
 }
 
 .nav-links-tag {
@@ -284,6 +285,7 @@ main {
     padding: 50px;
 }
 #details-text{
+    color: var(--banner-text);
     width: 800px;
     position: fixed;
     top: 250px;
@@ -319,6 +321,7 @@ main {
   /* Optional: Add additional styles for a more aesthetic look */
   .square-button:active {
     background-color: var(--header-btn-dark);
+    color: var(--White);
     transform: translateY(2px);
   }
   

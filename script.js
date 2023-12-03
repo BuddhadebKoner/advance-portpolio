@@ -51,7 +51,7 @@ function mainContent(isDarkMode) {
 
     //for the recomendarion section ---
     headingRec.style.color = isDarkMode ? 'var(--header-btn-light)' : 'var(--bright-text)';
-    recomendation.style.backgroundColor = isDarkMode? 'var(--banner-bg)':'var(--White)';
+    recomendation.style.backgroundColor = isDarkMode? 'var(--White)':'var(--Black)';
 
     // text-animation cursor border --
     textAnime.style.borderRight = isDarkMode? '2px solid #ffffff':'2px solid #000000'; 
