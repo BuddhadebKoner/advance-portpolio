@@ -9,76 +9,62 @@
 
 /* all color palate variables--*/
 :root {
-    --dark-bg: #01161e;
-    --light-bg: #ffffff;
+    --Black: #000000;
+    --White: #ffffff;
+
+    --header-bg: #1F2937;
+    --header-btn-dark: #7E22CE;
+    --header-btn-light: #C9A9EE;
+
+    --banner-bg:#101827;
+    --banner-text:#909CA9;
+    --banner-highlight:#9334E9;
+
+  
 }
 
 body {
     width: 100%;
     height: 200vh;
-    overflow-x: hidden;
+    background-color: transparent;
     /*off the horizantal scrolling*/
     overflow-y: auto;
-    background-color: transparent;
+    overflow-x: hidden;
 }
 
-.dark-mode {
-    background-color: var(--dark-bg) !important;
-    /*for dark mode*/
-    color: var(--light-bg);
-}
-
-.light-mode {
-    background-color: var(--light-bg) !important;
-    /*light*/
-}
-
-.elements-checked a {
-    color: var(--light-bg) !important;
-}
-
-header {
+/*here the heading styles*/
+.heading-content {
     position: fixed;
     width: 100%;
     height: 100px;
-    padding: 3vw;
-    background-color: transparent;
-    /*it is not permanent , because it will change im the js file*/
-    z-index: 1;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.427);
-    /* padding-bottom: 5px; */
-}
-
-.elements {
-    width: 100%;
-    height: 100%;
+    padding: 0 3vw 0 3vw;
+    z-index: 3;
     font-size: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    /*temputary color*/
+    /* background-color: #9334E9; */
 }
 
-.elements a {
+.nav-links-tag {
     text-decoration: none;
-    color: var(--dark-bg);
+    /*temputary color*/
+    color: var(--White);
 }
-
+#logo{
+    text-decoration: none;
+}
 .navs-link {
     display: flex;
     align-items: center;
 }
-
-.navs-link button {
+.nav-links-tag {
     margin: 10px;
 }
 
-.navs-link a {
-    margin: 10px;
-}
 
-#nav-contac {
-    margin-right: 50px;
-}
 
 /* button for the dark and light mode */
 .toggle-switch {
@@ -99,7 +85,7 @@ header {
     width: 100%;
     height: 100%;
     border-radius: 17px;
-    background-color: var(--light-bg);
+    background-color: white;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -120,7 +106,7 @@ header {
 }
 
 .toggle-switch input[type="checkbox"]:checked+label {
-    background-color: var(--dark-bg);
+    background-color: Black;
 }
 
 .toggle-switch input[type="checkbox"]:checked+label:before {
@@ -137,19 +123,32 @@ header {
 main {
     position: absolute;
     top: 100px;
-    background-color: rgb(64, 95, 95);
+    background-color: transparent;
     width: 100%;
     height: 100%;
 }
 
 /* the baner portion is from here  */
 .banner {
+    position: fixed;
     width: 100%;
-    height: 40vh;
-    background-color: var(--light-bg);
+    height: 50vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    color: black;
+}
+
+/* recomendation box */
+.recomendation{
+    width: 100%;
+    height: 300vh;
+    /* background-color: var(--recomendation-bg-light); */
+    z-index: 2;
+    position: relative;
+    top: 50vh;
+    padding: 20px 10em 0 10em;
+    text-align: center;
 }
 
 /* cover section */
@@ -164,7 +163,7 @@ main {
 #light-img {
     width: 800px;
     height: 100%;
-    opacity: 0.5;
+    opacity: 1;
     display: none;
     /* z-index: -1; */
 }
