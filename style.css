@@ -281,7 +281,6 @@ main {
     height: fit-content;
     height: fit-content;
     font-size: 20px;
-    
 }
 .cover-content {
    width: 800px;
@@ -290,7 +289,7 @@ main {
 }
 #details-text{
     color: var(--banner-text);
-    width: 800px;
+    width: 665px;
     position: fixed;
     top: 250px;
 }
@@ -336,6 +335,7 @@ main {
   
 
   /*this is for the card in the recomendation -- */
+  
   .cards-sections{
     background-color: transparent;
     width: 100%;
@@ -344,6 +344,7 @@ main {
     justify-content: space-around;
     padding-top: 30px;
   }
+
   .card {
     position: relative;
     width: 384px;
@@ -384,3 +385,57 @@ main {
     margin: 10px 0 0;
     color: var(--banner-text);
   }
+
+ 
+  /* 1452px */
+  @media (max-width: 1452px) {
+    #dark-img,
+    #light-img {
+      opacity: 0.1;
+      display: none;
+      z-index: -1;
+    }
+  }
+  /* 1334px */
+  @media (max-width: 1334px) {
+    #dark-img,
+    #light-img {
+      opacity: 0.1;
+      display: none;
+      z-index: -1;
+    }
+    .cards-sections {
+        flex-direction: column;
+        align-items: center; 
+      }
+      .card{
+        margin: 20px;
+      }
+  }
+
+  /* 881px */
+  @media (max-width: 881px) {
+    .navs-link{
+        display: none;
+    }
+    #details-text{
+        width: 90%;
+    }
+  }
+  /*649px*/
+  @media (max-width: 649px) {
+   #text-anime{
+    font-size: 5vw;
+   }
+  }
+
+  /*509px*/
+
+  @media (max-width: 509px) {
+    .recomendation {
+        top: 60vh;
+    }
+    .banner{
+        height: 100vh;
+    }
+}
