@@ -436,7 +436,7 @@ p {
 
     #details-text {
         width: 85vw;
-        overflow-y: auto;
+        top: 200px;
     }
 }
 
