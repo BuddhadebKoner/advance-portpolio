@@ -160,9 +160,9 @@ typeText();
 
 
 
-// Event listener for window resize
-window.addEventListener('resize', checkWidth=>{
-  if (window.innerWidth <= 450) {
-    alert('Open in Desktop for more options,');
-}
-});
+// // Event listener for window resize
+// window.addEventListener('resize', checkWidth=>{
+//   if (window.innerWidth <= 450) {
+//     alert('Open in Desktop for more options,');
+// }
+// });
