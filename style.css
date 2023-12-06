@@ -393,6 +393,18 @@ p {
     color: var(--banner-text);
 }
 
+/*footer --*/
+
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
 
 /* 1452px */
 @media (max-width: 1452px) {
@@ -447,7 +459,7 @@ p {
     }
 
     .recomendation {
-        top: 50vh;
+        top: 52vh;
     }
 
     .banner {

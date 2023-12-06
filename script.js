@@ -159,14 +159,14 @@ function typeText() {
 typeText();
 
 
-function checkWidth() {
-  if (window.innerWidth <= 450) {
-      alert('Open in Desktop for more options,');
-  }
-}
+// function checkWidth() {
+//   if (window.innerWidth <= 450) {
+//       alert('Open in Desktop for more options,');
+//   }
+// }
 
-// Initial check on page load
-checkWidth();
+// // Initial check on page load
+// checkWidth();
 
-// Event listener for window resize
-window.addEventListener('resize', checkWidth);
+// // Event listener for window resize
+// window.addEventListener('resize', checkWidth);
