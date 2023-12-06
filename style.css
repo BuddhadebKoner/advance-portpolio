@@ -434,7 +434,7 @@ main {
 
   @media (max-width: 509px) {
     .recomendation {
-        top: 60vh;
+        top: 80vh;
     }
     .banner{
         height: 100vh;
