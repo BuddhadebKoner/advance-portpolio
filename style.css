@@ -24,7 +24,7 @@
     --button-hover: #D1D5DB;
 
     --recomendation-bg: #101827;
-    --cards-color :#1E293B;
+    --cards-color: #1E293B;
 
 }
 
@@ -44,8 +44,8 @@ body {
 /* hover animation of links starts from here */
 /* nav-links-tag */
 
-  /* Link styles */
-  .nav-links-tag {
+/* Link styles */
+.nav-links-tag {
     text-decoration: none;
     position: relative;
     transition: color 0.3s, transform 0.3s;
@@ -83,10 +83,12 @@ body {
 .nav-links-tag:hover::before {
     transform: scaleX(1);
 }
+
 /* Lift effect on hover */
 .nav-links-tag:hover {
     transform: translate(0, -5px);
 }
+
 /* this is a hover animation */
 
 .heading-content {
@@ -136,6 +138,7 @@ body {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
 /*end*/
 
 .navs-link {
@@ -216,11 +219,12 @@ main {
 .banner {
     position: fixed;
     width: 100%;
-    height: 50vh;
+    height: 51vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 /*this is a animation of text delete and appear automaticly --*/
 
 #text-anime {
@@ -230,7 +234,8 @@ main {
     font-size: 40px;
     /* position: fixed; */
     left: 5vw;
-  }
+}
+
 /* recomendation box */
 .recomendation {
     width: 100%;
@@ -276,18 +281,20 @@ main {
 }
 
 /*here the content that have in the banner section..*/
-.animation-text{
+.animation-text {
     width: fit-content;
     height: fit-content;
     height: fit-content;
     font-size: 20px;
 }
+
 .cover-content {
-   width: 800px;
+    width: 800px;
     background-color: transparent;
     padding: 50px;
 }
-#details-text{
+
+#details-text {
     color: var(--banner-text);
     width: 800px;
     position: fixed;
@@ -295,12 +302,13 @@ main {
 }
 
 /*button style in css*/
-#banner-btns{
-   position: static;
-   display: flex;
-   align-items: center;
-   margin-top: 50px;
+#banner-btns {
+    position: static;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
 }
+
 /* Styles for the button */
 .square-button {
     display: inline-block;
@@ -314,38 +322,38 @@ main {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-  }
-  
-  /* Hover effect */
-  .square-button:hover {
+}
+
+/* Hover effect */
+.square-button:hover {
     background-color: var(--button-hover);
-  }
-  
-  /* Optional: Add additional styles for a more aesthetic look */
-  .square-button:active {
+}
+
+/* Optional: Add additional styles for a more aesthetic look */
+.square-button:active {
     background-color: var(--header-btn-dark);
     color: var(--White);
     transform: translateY(2px);
-  }
-  
-  /* Optional: Add box shadow for depth */
-  .square-button {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
+}
 
-  /*this is for the card in the recomendation -- */
-  
-  .cards-sections{
+/* Optional: Add box shadow for depth */
+.square-button {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/*this is for the card in the recomendation -- */
+
+.cards-sections {
     background-color: transparent;
     width: 100%;
     height: fit-content;
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
-  }
+}
 
-  .card {
+.card {
     position: relative;
     width: 384px;
     height: 500px;
@@ -353,90 +361,105 @@ main {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-  }
+}
 
-  .card:hover {
+.card:hover {
     transform: scale(1.05);
-  }
+}
 
-  .card-thumbnail {
+.card-thumbnail {
     width: 100%;
     height: 216px;
     overflow: hidden;
-  }
+}
 
-  .thumbnail-photo {
+.thumbnail-photo {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+}
 
-  .card-details {
+.card-details {
     padding: 20px;
     height: 208px;
-  }
+}
 
-  h2 {
+h2 {
     margin: 0;
     font-size: 1.5rem;
-  }
+}
 
-  p {
+p {
     margin: 10px 0 0;
     color: var(--banner-text);
-  }
+}
 
- 
-  /* 1452px */
-  @media (max-width: 1452px) {
+
+/* 1452px */
+@media (max-width: 1452px) {
+
     #dark-img,
     #light-img {
-      opacity: 0.1;
-      display: none;
-      z-index: -1;
+        opacity: 0.1;
+        display: none;
+        z-index: -1;
     }
-  }
-  /* 1334px */
-  @media (max-width: 1334px) {
+}
+
+/* 1334px */
+@media (max-width: 1334px) {
+
     #dark-img,
     #light-img {
-      opacity: 0.1;
-      display: none;
-      z-index: -1;
+        opacity: 0.1;
+        display: none;
+        z-index: -1;
     }
+
     .cards-sections {
         flex-direction: column;
-        align-items: center; 
-      }
-      .card{
-        margin: 20px;
-      }
-  }
+        align-items: center;
+    }
 
-  /* 881px */
-  @media (max-width: 881px) {
-    .navs-link{
+    .card {
+        margin: 20px;
+    }
+}
+
+/* 881px */
+@media (max-width: 881px) {
+    .navs-link {
         display: none;
     }
-    #details-text{
+
+    #details-text {
         width: 85vw;
         overflow-y: auto;
     }
-  }
-  /*649px*/
-  @media (max-width: 649px) {
-   #text-anime{
-    font-size: 5.4vw;
-   }
-  }
+}
 
-  /*509px*/
-
-  @media (max-width: 509px) {
-    .recomendation {
-        top: 80vh;
+/*748p*/
+@media (max-width: 748px) {
+    #text-anime {
+        font-size: 5.4vw;
     }
-    .banner{
-        height: 100vh;
+
+    .recomendation {
+        top: 50vh;
+    }
+
+    .banner {
+        height: 50em;
+    }
+    #details-text {
+        font-size: 2vw;
+    }
+}
+
+/*373px*/
+
+@media (max-width: 373px) {
+    .square-button{
+        font-size: 15px;
     }
 }
