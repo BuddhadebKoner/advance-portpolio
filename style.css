@@ -289,7 +289,7 @@ main {
 }
 #details-text{
     color: var(--banner-text);
-    width: 665px;
+    width: 800px;
     position: fixed;
     top: 250px;
 }
@@ -419,7 +419,8 @@ main {
         display: none;
     }
     #details-text{
-        width: 90%;
+        width: 85vw;
+        overflow-y: auto;
     }
   }
   /*649px*/
