@@ -159,15 +159,14 @@ function typeText() {
 typeText();
 
 
-window.onload = function() {
-  // Check the width of the screen
-  var screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-  // Set the desired width for showing the alert
-  var targetWidth = 412;
-
-  // Display an alert if the screen width is exactly the target width
-  if (screenWidth === targetWidth) {
-      alert("For a better experience, open this website on a desktop.");
+function checkWidth() {
+  if (window.innerWidth <= 450) {
+      alert('Open in Desktop for more options,');
   }
-};
+}
+
+// Initial check on page load
+checkWidth();
+
+// Event listener for window resize
+window.addEventListener('resize', checkWidth);
