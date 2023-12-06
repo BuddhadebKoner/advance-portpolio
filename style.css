@@ -398,11 +398,16 @@ p {
     .footer {
       background-color: #333;
       color: white;
-      text-align: center;
       padding: 20px;
       position: fixed;
       bottom: 0;
       width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      z-index: -10;
+      font-size: 2vw;
     }
 
 
