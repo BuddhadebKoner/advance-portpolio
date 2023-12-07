@@ -243,7 +243,7 @@ main {
     z-index: 2;
     position: relative;
     top: 50vh;
-    padding: 20px 5em 0 5em;
+    padding: 20px 4em 0 4em;
     text-align: center;
 }
 
@@ -425,6 +425,7 @@ p {
 
     .recomendation {
         height: fit-content;
+        padding: 5rem;
     }
 }
 
