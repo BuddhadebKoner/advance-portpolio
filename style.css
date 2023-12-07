@@ -501,4 +501,7 @@ p {
     .cover-content{
         padding: 30px;
     }
+    .logo{
+        font-size: 1.0rem;
+    }
 }
