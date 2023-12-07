@@ -245,6 +245,7 @@ main {
     top: 50vh;
     padding: 20px 5em 0 5em;
     text-align: center;
+    flex-wrap: wrap;
 }
 
 .heading-rec {
@@ -350,6 +351,7 @@ main {
     display: flex;
     justify-content: space-around;
     padding-top: 30px;
+    flex: 1;
 }
 
 .card {
@@ -383,7 +385,7 @@ main {
     height: 208px;
 }
 
-h2 {
+.cards-title{
     margin: 0;
     font-size: 1.5rem;
 }
@@ -424,7 +426,6 @@ p {
 
 /* 1334px */
 @media (max-width: 1334px) {
-
     #dark-img,
     #light-img {
         opacity: 0.1;
@@ -440,13 +441,16 @@ p {
     .card {
         margin: 20px;
     }
-    .recomendation{
+
+    .recomendation {
         height: fit-content;
     }
-    .footer{
+
+    .footer {
         display: none;
     }
 }
+
 
 /* 881px */
 @media (max-width: 881px) {
@@ -467,21 +471,34 @@ p {
     }
 
     .recomendation {
-        top: 62vh;
+        top: 50vh;
     }
 
     .banner {
         height: 50em;
     }
     #details-text {
-        font-size: 3.5vw;
+        font-size: 2.9vw;
     }
+    .cards-title{
+        font-size: 1.1rem;
+    }
+    #banner-btns{
+        margin-top: 0px;
+    }
+    
 }
 
 /*373px*/
 
-@media (max-width: 373px) {
+@media (max-width: 389px) {
     .square-button{
-        font-size: 15px;
+        font-size: 11px;
+    }
+    .card{
+        width: 300px;
+    }
+    .cover-content{
+        padding: 30px;
     }
 }
