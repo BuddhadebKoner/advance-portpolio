@@ -31,7 +31,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
-    height: 200vh;
+    height: fit-content;
     background-color: transparent;
     overflow-y: auto;
     overflow-x: hidden;
@@ -184,7 +184,7 @@ body {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-image: url(img/moon.jpg);
+    background-image: url(img/moon.webp);
     background-size: cover;
     background-position: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, );
@@ -197,7 +197,7 @@ body {
 
 .toggle-switch input[type="checkbox"]:checked+label:before {
     transform: translateX(26px);
-    background-image: url(img/sun.jpg);
+    background-image: url(img/sun.webp);
     background-size: cover;
     background-position: center;
 }
@@ -238,14 +238,13 @@ main {
 /* recomendation box */
 .recomendation {
     width: 100%;
-    height: 100%;
+    height: fit-content;
     /* background-color: var(--recomendation-bg-light); */
     z-index: 2;
     position: relative;
     top: 50vh;
     padding: 20px 5em 0 5em;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 .heading-rec {
@@ -349,7 +348,8 @@ main {
     width: 100%;
     height: fit-content;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    flex-wrap: wrap;
     padding-top: 30px;
     flex: 1;
 }
@@ -362,6 +362,7 @@ main {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
+    margin: 1vw;
 }
 
 .card:hover {
@@ -395,22 +396,6 @@ p {
     color: var(--banner-text);
 }
 
-/*footer --*/
-
-    .footer {
-      background-color: #333;
-      color: white;
-      padding: 20px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      align-items: end;
-      justify-content: center;
-      z-index: -10;
-      font-size: 2vw;
-    }
 
 
 /* 1452px */
@@ -433,21 +418,13 @@ p {
         z-index: -1;
     }
 
-    .cards-sections {
-        flex-direction: column;
-        align-items: center;
-    }
-
+   
     .card {
-        margin: 20px;
+       margin: 10px;
     }
 
     .recomendation {
         height: fit-content;
-    }
-
-    .footer {
-        display: none;
     }
 }
 
@@ -469,11 +446,6 @@ p {
     #text-anime {
         font-size: 5.4vw;
     }
-
-    .recomendation {
-        top: 50vh;
-    }
-
     .banner {
         height: 50em;
     }
@@ -485,6 +457,10 @@ p {
     }
     #banner-btns{
         margin-top: 0px;
+    }
+    .recomendation{
+        top: 50vh;
+        padding: 10px;
     }
     
 }
@@ -504,4 +480,5 @@ p {
     .logo{
         font-size: 1.0rem;
     }
+   
 }
