@@ -1,5 +1,4 @@
 console.log("successful!");
-alert("Open in desktop for more functions");
 
 
 
